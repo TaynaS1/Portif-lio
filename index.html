@@ -1,121 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portfólio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Tayná Santos, graduanda em Sistemas de Informação no IFSULDEMINAS - Campus Machado.">
+  <title>TS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="style.js" defer></script>
 </head>
 <body>
 <header class="cabecalho">
-<a class="logo" href="#inicio">TSS</a>
-<nav class="menu" aria-label="Principal">
-</nav>
-<button id="navToggle" class="menu-toggle" aria-expanded="false" aria-controls="navContainer" aria-label="Abrir menu">
-☰
-</button>
-<nav id="navContainer" class="menu" aria-label="Principal">
-<a href="#sobre">Sobre</a>
-<a href="#formacao">Formação</a>
-<a href="#competencias">Competências</a>
-<a href="#projetos">Projetos</a>
-<a href="#contato">Contato</a>
-</nav>
+  <a class="logo" href="#inicio">TS</a>
+  <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">&#9776;</button>
+  <nav class="menu" id="menu" aria-label="Principal">
+    <a href="#sobre">Sobre</a>
+    <a href="#formacao">Formação</a>
+    <a href="#competencias">Competências</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
 </header>
 <main>
-<section class="secao hero" id="inicio">
-<div>
-<h1>Tayná Santos</h1>
-<div class="acoes">
-<a class="botao" href="#contato">Fale comigo</a>
-<a class="botao botao-contorno" href="https://github.com/TaynaS1" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
-</div>
-</div>
-<img class="hero-inicio" src="https://github.com/TaynaS1.png" alt="Foto de perfil">
-</section>
-<section class="secao" id="sobre">
-<h2>Sobre mim</h2>
-<p>Graduanda em Sistemas de Informação pelo IFSULDEMINAS, Campus Machado. Está aprendendo as linguagens de programação Python,C# e Banco de Dados. Participa de três projetos acadêmicos: um voltado à apicultura, explorando o uso de tecnologia da informação nessa área, e outro relacionado a máquinas e impressão 3D aplicadas a Sistemas de Informação. Tem interesse em desenvolvimento de software e em projetos que unam tecnologia a áreas como o zooctecina e a robótica.</p>
-</section>
-<section class="secao secao-lilas" id="formação">
-<h2>Formação</h2>
-<div class="grade">
-<article class="item">
-<h3>Ifsuldeminas-Machado</h3>
-<p>Graduação em Sistemas de Informação, 2026 - .</p>
-</article>
-<article class="item">
-<h3>Cursos online - Plataforma Educacional</h3>
-<p>Certificados de Banco de Dado e SQL</p>
-</article>
-<article class="item">
-<h3>Ifsuldeminas-Machado</h3>
-<p>Ensino Medio integrado com tecnico em Agropecuária</p>
-</article>
-</div>
-</section>
-<section class="secao" id="competencias">
-<h2>Competências</h2>
-<div class="grade">
-<article class="item">
-<h3>Front-end</h3>
-<p>HTML, CSS, JavaScript e React.</p>
-</article>
-<article class="item">
-<h3>Banco de Dados</h3>
-<p>SQL, PostgreSQL e MySQL.</p>
-</article>
-<article class="item">
-<h3>Ferramentas</h3>
-<p>Git, GitHub e VS Code.</p>
-</article>
-</div>
-</section>
-<section class="secao secao-lilas" id="projetos">
-<h2>Projetos</h2>
-<div class="grade">
-<a class="item item-link" href="https://github.com/TaynaS1/Geapi.git" target="_blank" rel="noopener noreferrer">
-<h3>Geapi</h3>
-<p>Site informativo sobre o Grupo de Estudo em Apicultura do Instituto Federal - Machado</p>
-<ul class="etiquetas">
-<li>HTML</li>
-<li>CSS</li>
-</ul>
-</a>
-</div>
-</section>
-<section class="secao-escura" id="contato">
-<h2>Contato</h2>
-<form class="formulario">
-<label>Nome
-<input type="text" name="nome" required>
-</label>
-<label>E-mail
-<input type="email" name="email" required>
-</label>
-<label>Mensagem
-<textarea name="mensagem" required></textarea>
-</label>
-<button class="botao" type="submit">Enviar mensagem</button>
-</form>
-</section>
+  <section class="secao hero" id="inicio">
+    <header class="hero-conteudo">
+      <span class="badge-tag">Sistemas de Informação</span>
+      <h1>Tayná Santos</h1>
+      <p>Desenvolvedora em formação, explorando sistemas de informação, robótica, SQL e desenvolvimento de software.</p>
+      <nav class="acoes" aria-label="Ações principais">
+      <a class="botao" href="#contato">Fale comigo</a>
+      <a class="botao botao-contorno" href="https://github.com/TaynaS1" target="_blank" rel="noopener noreferrer">
+        GitHub
+     </a>
+     </nav>
+    </header>
+    <div class="hero-foto-container">
+     <img class="hero-inicio" src="https://github.com/TaynaS1.png" alt="Foto de perfil de Tayná Santos">
+    </div>
+  </section>
+  <section class="secao" id="sobre">
+    <h2>Sobre mim</h2>
+    <div class="card-destaque">
+     <p>Graduanda em Sistemas de Informação pelo <strong>IFSULDEMINAS - Campus Machado</strong>. Aprendendo Python, C# e Banco de Dados. Participo de projetos acadêmicos voltados à apicultura (tecnologia aplicada) e impressão 3D com robótica aplicadas a Sistemas de Informação.</p>
+    </div>
+  </section>
+  <section class="secao" id="formacao">
+  <h2>Formação</h2>
+  <ul class="grade">
+     <li>
+     <article class="item">
+     <span class="categoria">Graduação</span>
+     <h3>IFSULDEMINAS - Machado</h3>
+     <p>Sistemas de Informação (2026 - Presente)</p>
+     </article>
+     </li>
+     <li>
+     <article class="item">
+     <span class="categoria">Certificações</span>
+     <h3>Cursos Online</h3>
+     <p>Certificados em Banco de Dados e SQL</p>
+     </article>
+     </li>
+     <li>
+     <article class="item">
+     <span class="categoria">Técnico</span>
+     <h3>IFSULDEMINAS - Machado</h3>
+     <p>Ensino Médio Integrado com Técnico em Agropecuária</p>
+     </article>
+     </li>
+  </ul>
+  </section>
+  <section class="secao" id="competencias">
+    <h2>Competências</h2>
+    <ul class="grade">
+     <li>
+     <article class="item">
+     <h3>Front-end</h3>
+     <p>HTML5, CSS3, JavaScript e React.</p>
+     </article>
+     </li>
+     <li>
+     <article class="item">
+     <h3>Banco de Dados</h3>
+     <p>SQL, PostgreSQL e MySQL.</p>
+     </article>
+      </li>
+      <li>
+     <article class="item">
+     <h3>Ferramentas</h3>
+     <p>Git, GitHub, VS Code e Impressão 3D.</p>
+     </article>
+     </li>
+    </ul>
+  </section>
+  <section class="secao" id="projetos">
+    <h2>Projetos</h2>
+    <ul class="grade">
+     <li>
+     <a class="item item-link" href="https://github.com/TaynaS1/Geapi" target="_blank" rel="noopener noreferrer">
+     <h3>Geapi</h3>
+     <p>Site informativo sobre o Grupo de Estudos em Apicultura do IFSULDEMINAS Campus Machado.</p>
+     <ul class="etiquetas">
+          <li>HTML</li>
+          <li>CSS</li>
+     </ul>
+     </a>
+     </li>
+    </ul>
+  </section>
+  <section class="secao" id="contato">
+    <h2>Contato</h2>
+    <form class="formulario">
+      <label>
+        Nome
+        <input type="text" name="nome" placeholder="Seu nome" required>
+      </label>
+      <label>
+        E-mail
+        <input type="email" name="email" placeholder="seu@email.com" required>
+      </label>
+      <label>
+        Mensagem
+        <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+      </label>
+      <button class="botao" type="submit">Enviar mensagem</button>
+    </form>
+  </section>
 </main>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-const botao = document.getElementById("navToggle");
-const nav = document.getElementById("navContainer");
-     if (!botao || !nav) return;
-     botao.addEventListener("click", function () {
-     const aberto = nav.classList.toggle("aberto");
-     botao.setAttribute("aria-expanded", aberto ? "true" : "false");
-});
- nav.querySelectorAll("a").forEach(function (link) {
-link.addEventListener("click", function () {
-nav.classList.remove("aberto");
-botao.setAttribute("aria-expanded", "false");
-});
-});
-});
-</script>
+<footer class="rodape">
+  <p>© 2026 Tayná Santos. Todos os direitos reservados.</p>
+  <div class="rodape-links">
+    <a href="https://www.linkedin.com/in/teu-perfil" target="_blank" rel="noopener noreferrer" class="link-icone">
+      <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+      </svg>
+      LinkedIn
+    </a>
+    <a href="http://lattes.cnpq.br/teu-numero-lattes" target="_blank" rel="noopener noreferrer" class="link-icone">
+      <svg class="icone-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM3.89 9L12 4.57 20.11 9 12 13.43 3.89 9zM5 13.07V18l7 3.82 7-3.82v-4.93l-2 1.09V17l-5 2.73L7 17v-2.84l-2-1.09z"/>
+      </svg>
+      Currículo Lattes
+    </a>
+  </div>
+</footer>
 </body>
 </html>
