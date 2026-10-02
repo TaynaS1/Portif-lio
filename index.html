@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfólio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="cabecalho">
+<a class="logo" href="#inicio">TSS</a>
+<nav class="menu" aria-label="Principal">
+</nav>
+<button id="navToggle" class="menu-toggle" aria-expanded="false" aria-controls="navContainer" aria-label="Abrir menu">
+☰
+</button>
+<nav id="navContainer" class="menu" aria-label="Principal">
+<a href="#sobre">Sobre</a>
+<a href="#formacao">Formação</a>
+<a href="#competencias">Competências</a>
+<a href="#projetos">Projetos</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+<main>
+<section class="secao hero" id="inicio">
+<div>
+<h1>Tayná Santos</h1>
+<div class="acoes">
+<a class="botao" href="#contato">Fale comigo</a>
+<a class="botao botao-contorno" href="https://github.com/TaynaS1" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+</div>
+</div>
+<img class="hero-inicio" src="https://github.com/TaynaS1.png" alt="Foto de perfil">
+</section>
+<section class="secao" id="sobre">
+<h2>Sobre mim</h2>
+<p>Graduanda em Sistemas de Informação pelo IFSULDEMINAS, Campus Machado. Está aprendendo as linguagens de programação Python,C# e Banco de Dados. Participa de três projetos acadêmicos: um voltado à apicultura, explorando o uso de tecnologia da informação nessa área, e outro relacionado a máquinas e impressão 3D aplicadas a Sistemas de Informação. Tem interesse em desenvolvimento de software e em projetos que unam tecnologia a áreas como o zooctecina e a robótica.</p>
+</section>
+<section class="secao secao-lilas" id="formação">
+<h2>Formação</h2>
+<div class="grade">
+<article class="item">
+<h3>Ifsuldeminas-Machado</h3>
+<p>Graduação em Sistemas de Informação, 2026 - .</p>
+</article>
+<article class="item">
+<h3>Cursos online - Plataforma Educacional</h3>
+<p>Certificados de Banco de Dado e SQL</p>
+</article>
+<article class="item">
+<h3>Ifsuldeminas-Machado</h3>
+<p>Ensino Medio integrado com tecnico em Agropecuária</p>
+</article>
+</div>
+</section>
+<section class="secao" id="competencias">
+<h2>Competências</h2>
+<div class="grade">
+<article class="item">
+<h3>Front-end</h3>
+<p>HTML, CSS, JavaScript e React.</p>
+</article>
+<article class="item">
+<h3>Banco de Dados</h3>
+<p>SQL, PostgreSQL e MySQL.</p>
+</article>
+<article class="item">
+<h3>Ferramentas</h3>
+<p>Git, GitHub e VS Code.</p>
+</article>
+</div>
+</section>
+<section class="secao secao-lilas" id="projetos">
+<h2>Projetos</h2>
+<div class="grade">
+<a class="item item-link" href="https://github.com/TaynaS1/Geapi.git" target="_blank" rel="noopener noreferrer">
+<h3>Geapi</h3>
+<p>Site informativo sobre o Grupo de Estudo em Apicultura do Instituto Federal - Machado</p>
+<ul class="etiquetas">
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+</a>
+</div>
+</section>
+<section class="secao-escura" id="contato">
+<h2>Contato</h2>
+<form class="formulario">
+<label>Nome
+<input type="text" name="nome" required>
+</label>
+<label>E-mail
+<input type="email" name="email" required>
+</label>
+<label>Mensagem
+<textarea name="mensagem" required></textarea>
+</label>
+<button class="botao" type="submit">Enviar mensagem</button>
+</form>
+</section>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+const botao = document.getElementById("navToggle");
+const nav = document.getElementById("navContainer");
+     if (!botao || !nav) return;
+     botao.addEventListener("click", function () {
+     const aberto = nav.classList.toggle("aberto");
+     botao.setAttribute("aria-expanded", aberto ? "true" : "false");
+});
+ nav.querySelectorAll("a").forEach(function (link) {
+link.addEventListener("click", function () {
+nav.classList.remove("aberto");
+botao.setAttribute("aria-expanded", "false");
+});
+});
+});
+</script>
+</body>
+</html>
